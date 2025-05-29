@@ -1,3 +1,4 @@
+import { updateSearchCount } from '@//lib/appwrite'
 import MovieCard from '@/components/MovieCard'
 import SearchBar from '@/components/searchBar'
 import { icons } from '@/constants/icons'
@@ -18,6 +19,9 @@ const Search = () => {
     const timeout = setTimeout(async()=>{
       if(searchQuery.trim()){
         await searchMovies()
+        if(movies?.results?.length > 0 && movies?.results[0]?.id){ 
+          await updateSearchCount(searchQuery, movies?.results[0])
+        }
       }else{
         reset()
       }
