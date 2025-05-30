@@ -95,10 +95,3 @@ const Search = () => {
 }
 
 export default Search
-
-//  <View className='w-full flex-col justify-center mt-20 items-center'>
-//                     <Image source={icons.logo} className="w-12 h-10"  />
-//                     <View className='my-3 mx-auto w-full rounded-full'>
-//                       <SearchBar onPress={()=>{}} placeholder="Search movies..." />
-//                     </View>
-//                   </View>
