@@ -74,7 +74,7 @@ const Search = () => {
               {!moviesLoading && !moviesError && searchQuery.trim() && movies?.results?.length > 0 && (
                  <Text className='text-xl text-white font-bold'>
                   Search Results for {' '}
-                  <Text className='text-accent' >{searchQuery}</Text>
+                  <Text className='text-accent italic' >{searchQuery}</Text>
 
                  </Text>
               )}
